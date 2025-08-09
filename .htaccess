@@ -1,0 +1,34 @@
+# Configuración principal del proyecto
+Options +FollowSymLinks
+
+# Permitir acceso a archivos PHP
+<Files "*.php">
+    Require all granted
+</Files>
+
+# Permitir acceso a archivos estáticos
+<Files "*.html">
+    Require all granted
+</Files>
+
+<Files "*.css">
+    Require all granted
+</Files>
+
+<Files "*.js">
+    Require all granted
+</Files>
+
+<Files "*.json">
+    Require all granted
+</Files>
+
+# Configurar directorio por defecto
+DirectoryIndex index.html index.php
+
+# Configurar CORS para la API
+<IfModule mod_headers.c>
+    Header always set Access-Control-Allow-Origin "*"
+    Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header always set Access-Control-Allow-Headers "Content-Type"
+</IfModule>

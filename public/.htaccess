@@ -1,0 +1,31 @@
+# Habilitar acceso a archivos estáticos
+Options +Indexes +FollowSymLinks
+
+# Configurar tipos MIME
+AddType application/javascript .js
+AddType text/css .css
+AddType application/json .json
+
+# Permitir acceso a todos los archivos
+<Files "*">
+    Require all granted
+</Files>
+
+# Configurar CORS para la API
+<IfModule mod_headers.c>
+    Header always set Access-Control-Allow-Origin "*"
+    Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header always set Access-Control-Allow-Headers "Content-Type"
+</IfModule>
+
+# Configurar caché para archivos estáticos
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
