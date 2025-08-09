@@ -28,10 +28,25 @@ const nf = new Intl.NumberFormat("es-AR",{maximumFractionDigits:4});
 const fmt = (n)=> nf.format(n);
 
 async function fetchRate(amount, from, to){
-  const qs = new URLSearchParams({amount, from, to}).toString();
-  const r = await fetch(`/moneda-app/api/convert.php?${qs}`, { headers:{ "Accept":"application/json" } });
+  // Usar API externa gratuita para Netlify
+  const url = `https://open.er-api.com/v6/latest/${from}`;
+  const r = await fetch(url, { headers:{ "Accept":"application/json" } });
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
-  return r.json();
+  const data = await r.json();
+  
+  if (!data.rates || !data.rates[to]) {
+    throw new Error('Tasa de cambio no disponible');
+  }
+  
+  const rate = data.rates[to];
+  const converted = amount * rate;
+  
+  return {
+    converted: converted,
+    rate: rate,
+    provider: 'exchangerate-api.com',
+    ts: Date.now()
+  };
 }
 
 function swapCurrencies(){ const a=$from.value; $from.value=$to.value; $to.value=a; }

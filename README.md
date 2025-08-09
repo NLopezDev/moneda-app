@@ -75,10 +75,12 @@ moneda-app/
 4. **Conecta tu repositorio de GitHub**
 5. **Configura el build:**
    - Build command: (dejar vacío)
-   - Publish directory: `.`
+   - Publish directory: `public`
 6. **Haz clic en "Deploy site"**
 
 Tu app estará disponible en: `https://tu-app.netlify.app`
+
+**Nota:** En Netlify, la aplicación usa una API externa gratuita en lugar de PHP.
 
 #### Opción 2: Vercel
 
