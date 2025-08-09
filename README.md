@@ -33,18 +33,20 @@ moneda-app/
 └── README.md               # Este archivo
 ```
 
-## 🚀 Instalación
+## 🚀 Instalación y Despliegue
 
-### Requisitos
+### 🏠 Desarrollo Local
+
+#### Requisitos
 - PHP 8.0 o superior
 - Apache/Nginx
 - XAMPP (recomendado para desarrollo)
 
-### Pasos
+#### Pasos
 
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/moneda-app.git
+   git clone https://github.com/NLopezDev/moneda-app.git
    cd moneda-app
    ```
 
@@ -61,6 +63,40 @@ moneda-app/
 4. **Accede a la aplicación:**
    ```
    http://localhost/moneda-app/public/
+   ```
+
+### 🌐 Despliegue en Producción
+
+#### Opción 1: Netlify (Recomendado - Gratis)
+
+1. **Fork este repositorio** a tu cuenta de GitHub
+2. **Ve a [netlify.com](https://netlify.com)** y crea una cuenta
+3. **Haz clic en "New site from Git"**
+4. **Conecta tu repositorio de GitHub**
+5. **Configura el build:**
+   - Build command: (dejar vacío)
+   - Publish directory: `.`
+6. **Haz clic en "Deploy site"**
+
+Tu app estará disponible en: `https://tu-app.netlify.app`
+
+#### Opción 2: Vercel
+
+1. **Ve a [vercel.com](https://vercel.com)** y crea una cuenta
+2. **Importa tu repositorio de GitHub**
+3. **Vercel detectará automáticamente la configuración**
+4. **Haz clic en "Deploy"**
+
+#### Opción 3: Servidor Compartido
+
+1. **Sube los archivos** a tu servidor web
+2. **Configura los permisos:**
+   ```bash
+   chmod 775 api/.cache
+   ```
+3. **Accede a tu dominio:**
+   ```
+   https://tu-dominio.com/moneda-app/public/
    ```
 
 ## 📖 Uso
