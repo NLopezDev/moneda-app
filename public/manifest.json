@@ -1,0 +1,27 @@
+{
+  "name": "Conversor de Monedas",
+  "short_name": "Monedas",
+  "description": "Conversor de monedas en tiempo real con tasas actualizadas",
+  "start_url": "/moneda-app/public/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#22c55e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMyMmM1NWUiLz4KPHN2ZyB4PSI0OCIgeT0iNDgiIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwNDEzMGEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KPHBhdGggZD0iTTEyIDJ2MjBNMTIgNmg2YTIgMiAwIDAgMSAyIDJ2MTAuMDAwMDAwMDAwMDAwMDFhMiAyIDAgMCAxLTIgMmgtNmEyIDIgMCAwIDEtMi0yVjhhMiAyIDAgMCAxIDItMnoiLz4KPHBhdGggZD0iTTEyIDZ2MTJhMiAyIDAgMCAxLTIgMmgtNmEyIDIgMCAwIDEtMi0yVjhhMiAyIDAgMCAxIDItMmg2YTIgMiAwIDAgMSAyIDJ6Ii8+Cjwvc3ZnPgo8L3N2Zz4K",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiMyMmM1NWUiLz4KPHN2ZyB4PSIxMjgiIHk9IjEyOCIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDQxMzBhIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CjxwYXRoIGQ9Ik0xMiAydjIwTTEyIDZoNmEyIDIgMCAwIDEgMiAydjEwLjAwMDAwMDAwMDAwMDAxYTIgMiAwIDAgMS0yIDJoLTZhMiAyIDAgMCAxLTIgMlY4YTIgMiAwIDAgMSAyLTJ6Ii8+CjxwYXRoIGQ9Ik0xMiA2djEyYTIgMiAwIDAgMS0yIDJoLTZhMiAyIDAgMCAxLTIgMlY4YTIgMiAwIDAgMSAyLTJoNmEyIDIgMCAwIDEgMiAyeiIvPgo8L3N2Zz4KPC9zdmc+Cg==",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "utilities"],
+  "lang": "es",
+  "dir": "ltr"
+}

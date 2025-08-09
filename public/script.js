@@ -71,4 +71,23 @@ document.addEventListener("DOMContentLoaded", ()=>{
   if ($swap) $swap.addEventListener("click", swapCurrencies);
   if ($form) $form.addEventListener("submit", handleConvert);
   if ($btn)  $btn.addEventListener("click", handleConvert); // respaldo extra
+  
+  // Mejoras para dispositivos móviles
+  if ('serviceWorker' in navigator) {
+    // Registrar service worker para PWA (opcional)
+    // navigator.serviceWorker.register('/sw.js');
+  }
+  
+  // Prevenir zoom en inputs en iOS
+  const inputs = document.querySelectorAll('input[type="number"]');
+  inputs.forEach(input => {
+    input.addEventListener('focus', () => {
+      input.style.fontSize = '16px';
+    });
+  });
+  
+  // Mejorar experiencia táctil
+  if ('ontouchstart' in window) {
+    document.body.classList.add('touch-device');
+  }
 });
